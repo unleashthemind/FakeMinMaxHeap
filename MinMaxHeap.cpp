@@ -105,26 +105,5 @@ void MinMaxHeap<T>::dump(){
    }
 }
 
-template <typename T>
-void MinMaxHeap<T>::locateMin(int pos, T& data, int& index){
-   data = minHeap->m_data[pos];
-   for(int i = maxHeap->m_size;i > 0;i--){ //Runs O(n) unless pos = 1
-      if(data == maxHeap->m_data[i]){
-         index = i;
-         return;
-      }
-   } 
-}
-
-template <typename T>
-void MinMaxHeap<T>::locateMax(int pos, T& data, int& index){
-   data = maxHeap->m_data[pos];
-   for(int i = minHeap->m_size;i > 0;i--){ //Runs O(n) unless pos = 1
-      if(data == minHeap->m_data[i]){
-         index = i;
-         return;
-      }
-   }
-}
 
 #endif

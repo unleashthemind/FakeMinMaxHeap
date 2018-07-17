@@ -1,10 +1,8 @@
 // File: Driver.cpp
 // Author: Anthony Littlefield
 // CMSC 341 Spring 2018 Project 4
-// Combination of tests that my code passes
-// TODO: Only thing that doesn't work is locateMin() and locateMax() for duplicates
-// because I implemented my removes in O(logn) with using properties of
-// Heaps rather than indicies
+// Combination of tests 
+
 
 #include "MinMaxHeap.h"
 #include <iostream>
@@ -390,7 +388,7 @@ int main(){
       H3.insert(key) ;
       S.insert(key) ;
    }
-   //sanityCheck(H3) ; //Sanity check doesn't like how I handle duplicates
+   //sanityCheck(H3) ; //Sanity check was written to handle duplicates differently than how I chose
    checkAgainstSet(H3,S) ;
 
    passed = true ;
@@ -405,7 +403,7 @@ int main(){
       }
    }
 
-   //sanityCheck(H3) ;//Sanity check doesn't like how I handle duplicates
+   //sanityCheck(H3) ;//Sanity check was written to handle duplicates differently than how I chose
 
    if (passed) {
       checkAgainstSet(H3,S) ;
@@ -427,7 +425,7 @@ int main(){
       H4.insert(key) ;
       S1.insert(key) ;
    }
-   //sanityCheck(H4) ; //Sanity check doesn't like how I handle duplicates
+   //sanityCheck(H4) ; //Sanity check was written to handle duplicates differently than how I chose
    checkAgainstSet(H4,S1) ;
 
    passed = true ;
@@ -442,7 +440,7 @@ int main(){
       }
    }
 
-   //sanityCheck(H4) ; //Sanity check doesn't like how I handle duplicates
+   //sanityCheck(H4) ; //Sanity check was written to handle duplicates differently than how I chose
 
 
    if (passed) {

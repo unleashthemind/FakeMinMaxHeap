@@ -1,3 +1,4 @@
+
 // File: MinMaxHeap.cpp
 // Author: Anthony Littlefield
 // CMSC 341 Spring 2018 Project 4
@@ -47,6 +48,10 @@ public:
 	
 	// Outputs all data
    void dump();
+	
+   void locateMin(int pos, T& data, int& index);
+	
+   void locateMax(int pos, T& data, int& index);
 		
    class Heap{
    public:

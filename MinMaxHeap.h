@@ -47,11 +47,7 @@ public:
 	
 	// Outputs all data
    void dump();
-	
-   void locateMin(int pos, T& data, int& index);
-	
-   void locateMax(int pos, T& data, int& index);
-	
+		
    class Heap{
    public:
       Heap(bool (func)(T a,T b),const int& capacity){

@@ -281,7 +281,7 @@ void checkAgainstSet(MinMaxHeap<T>& H, multiset<T,greater<T> >& origS) {
 
 
 int main(){
-	//Test1
+   //Test1
    MinMaxHeap<int> H(25) ;
    H.insert(5) ;
    H.insert(10) ;
@@ -315,7 +315,7 @@ int main(){
    H.dump() ;
    sanityCheck(H) ;
 	
-	//Test2
+   //Test2
    MinMaxHeap<string> H1(25) ;
    H1.insert("jkl") ;
    H1.insert("yz_") ;
@@ -340,7 +340,7 @@ int main(){
    H1.dump() ;
    sanityCheck(H1) ;
 	
-	//Test3 (works, but commented out since NoCopyString is not a file we are supposed to turn in)
+   //Test3 (works, but commented out since NoCopyString is not a file we are supposed to turn in)
    /*
    MinMaxHeap<NoCopyString> H2(9) ;
 
@@ -372,8 +372,8 @@ int main(){
 
    H2.dump() ;
    sanityCheck(H2) ;
-	*/
-	//Test 4
+   */
+   //Test 4
    srand(4178012351) ;
 
    MinMaxHeap<int> H3(1000) ;
@@ -412,7 +412,7 @@ int main(){
       cout << "***Failed deleteMin() test!\n" ;
       cout << "Skipped check against multiset\n" ;
    }
-	//Test 5
+   //Test 5
    srand(4178012351) ;
 
    MinMaxHeap<int> H4(1000) ;
@@ -450,7 +450,7 @@ int main(){
       cout << "***Failed deleteMax() test!\n" ;
       cout << "Skipped check against multiset\n" ;
    }
-	// Test 6
+   // Test 6
    MinMaxHeap<int> H5(25) ;
    H5.insert(5) ;
    H5.insert(10) ;
